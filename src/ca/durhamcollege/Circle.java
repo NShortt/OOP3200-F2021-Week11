@@ -61,10 +61,10 @@ public class Circle extends Shape
         String output = "";
 
         output += "---------------------------------\n";
-        output += "Center:" + getCenter() + "\n";
-        output += "Radius:" + getRadius() + "\n";
-        output += "Area:" + getArea() + "\n";
-        output += "Circumference:" + getCircumference() + "\n";
+        output += "Center       : " + getCenter() + "\n";
+        output += "Radius       : " + getRadius() + "\n";
+        output += "Area         : " + getArea() + "\n";
+        output += "Circumference: " + getCircumference() + "\n";
         output += "---------------------------------\n";
 
         return output;
