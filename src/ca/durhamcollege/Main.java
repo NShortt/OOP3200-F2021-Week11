@@ -15,7 +15,7 @@ public class Main
             System.out.println(e.getMessage());
         }*/
 
-        Circle circle = new Circle(new Vector2D(), 2.0f);
+        Circle circle = new Circle(new Vector2D(), (float)Math.PI);
         System.out.println(circle.toString());
 
     }
