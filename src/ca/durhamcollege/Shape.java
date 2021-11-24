@@ -12,13 +12,13 @@ public abstract class Shape
 
     // Constructors
 
-    public Shape()
+    Shape()
     {
         vertices.add(Vector2D.zero());
         edges.add(new Line());
     }
 
-    public Shape(Vector2D[] vertices)
+    Shape(Vector2D[] vertices)
     {
         build(vertices);
     }
@@ -48,5 +48,30 @@ public abstract class Shape
     }
 
     // Public Methods
+    @Override
+    public String toString()
+    {
+        String output = "";
+
+        output += "Vertices: \n";
+        output += "---------------------------------\n";
+
+        for (var vertex : vertices)
+        {
+            output += vertex.toString() + "\n";
+        }
+
+        output += "\n---------------------------------\n";
+        output += "Edges: \n";
+        output += "---------------------------------\n";
+
+        for (var edge : edges)
+        {
+            output += edge.toString() + "\n";
+        }
+
+        return output;
+    }
+
 
 }
