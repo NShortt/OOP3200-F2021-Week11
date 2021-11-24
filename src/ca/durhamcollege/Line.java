@@ -42,12 +42,12 @@ public class Line
 
     // Constructors
 
-    Line()
+    public Line()
     {
         set(Vector2D.zero(), Vector2D.zero());
     }
 
-    Line(Vector2D start, Vector2D end)
+    public Line(Vector2D start, Vector2D end)
     {
         set(start, end);
     }
@@ -58,6 +58,6 @@ public class Line
     @Override
     public String toString()
     {
-        return "start: " + getStart().toString() + ", end: " + getEnd().toString() + ", length: " + getLength();
+        return "start: " + getStart().toString() + " end: " + getEnd().toString() + " length: " + getLength();
     }
 }
